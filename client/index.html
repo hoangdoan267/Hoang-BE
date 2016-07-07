@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-ui-router.min.js"></script>
+    <script src="libs/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet">
+<!--     <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+    <title>Angular App</title>
+  </head>
+  <body ng-app="myAngular">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div ui-view></div>
+            <lx page="1" size="6"></lx>
+        </div>  
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="home-controller.js"></script>
+    <script src="girl-controller.js"></script>
+    <script src="update.js"></script>
+  </body>
+</html>
