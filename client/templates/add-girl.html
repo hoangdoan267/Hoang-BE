@@ -1,4 +1,4 @@
-<h1 style="text-align:center;">Add Girl</h1>
+<h1 style="text-align:center;">{{type}} Girl</h1>
 <form class="form-horizontal">
 	<div class="form-group">
 		<label for="name" class="col-lg-2 control-label">Name</label>
@@ -18,9 +18,8 @@
 	</div>
 	<div class="form-group">
 		<div class="col-lg-10 col-lg-offset-2">
-			<input type="button" value="Add" ng-click="add()" class="btn btn-success button">
+			<input type="button" value="{{type}}" ng-click="addOrUpdate()" class="btn btn-success button">
 			<input type="button" value="Cancel" ng-click="cancel()" class="btn btn-default button">
 		</div>	
 	</div>
 </form>
-

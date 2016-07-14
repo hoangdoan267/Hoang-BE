@@ -1,0 +1,23 @@
+<input type="button" value="Add" ng-click="add()" class="btn btn-success">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th >Name</th>
+      <th >Age</th>
+      <th >Facebook</th>
+      <th >Pasword</th>
+      <th >Action</th>
+    </tr>
+  </thead>
+  <tr ng-repeat="girl in girls">
+    <td>{{girl.name}}</td>
+    <td>{{girl.age}}</td>
+    <td>{{girl.facebook}}</td>
+    <td>{{girl.password}}</td>
+    <td>
+    <input type="button" value="Delete" ng-click="delete($index)" class="btn btn-danger">
+    <input type="button" value="Update" ng-click="update(girl, $index)" class="btn btn-primary"></td>
+  </tr>
+</table>
+<div class="pagination" ng-class="{'pagination--active' : n === page}" ng-repeat="n in pages" ng-click="goToPage(n)">{{n}}</div>
+ 
